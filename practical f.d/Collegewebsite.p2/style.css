@@ -1,0 +1,84 @@
+body {
+    
+    background-image: url("C:/Users/Administrator/Downloads/pexels-davegarcia-31039051%20(1).jpg");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    text-align: center;
+    font-family: Arial;
+}
+
+
+/* College Name */
+
+h1 {
+    font-size: 50px;
+    color: darkblue;
+}
+
+
+/* Address */
+
+.address {
+    font-size: 18px;
+    color: black;
+}
+
+
+/* Course 1 */
+
+.course1 {
+    color: red;
+    font-family: Arial;
+    font-style: italic;
+    font-size: 24px;
+}
+
+
+/* Course 2 */
+
+.course2 {
+    color: green;
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+/* Course 3 */
+
+.course3 {
+    color: blue;
+    font-family: "Courier New";
+    font-style: italic;
+    font-size: 24px;
+}
+
+
+/* Course 4 */
+
+.course4 {
+    color: purple;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+/* Scrolling Text */
+
+.scroll {
+    color: darkred;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+/* Bottom Image */
+
+.bottom-image {
+    width: 400px;
+    height: 250px;
+}

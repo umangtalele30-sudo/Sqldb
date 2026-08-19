@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>City Information</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* First Frame - Heading */
+        .heading {
+            height: 20vh;
+            background-color: lightblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .heading h1 {
+            color: darkblue;
+        }
+
+        /* Second Frame */
+        .content {
+            height: 80vh;
+            display: flex;
+        }
+
+        /* Left Column */
+        .city-list {
+            width: 30%;
+            background-color: lightyellow;
+            padding: 20px;
+            border-right: 2px solid gray;
+        }
+
+        .city-list h2 {
+            color: darkblue;
+        }
+
+        .city-list a {
+            display: block;
+            padding: 10px;
+            margin: 5px 0;
+            color: blue;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .city-list a:hover {
+            background-color: lightblue;
+            color: black;
+        }
+
+        /* Right Column */
+        .information {
+            width: 70%;
+            padding: 30px;
+            background-color: white;
+        }
+
+        .information h1 {
+            color: darkblue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- First Frame -->
+    <div class="heading">
+
+        <h1>City Information</h1>
+
+    </div>
+
+
+    <!-- Second Frame -->
+    <div class="content">
+
+
+        <!-- Left Column -->
+        <div class="city-list">
+
+            <h2>Cities</h2>
+
+            <a onclick="showCity('pune')">
+                Pune
+            </a>
+
+            <a onclick="showCity('mumbai')">
+                Mumbai
+            </a>
+
+            <a onclick="showCity('nashik')">
+                Nashik
+            </a>
+
+            <a onclick="showCity('nagpur')">
+                Nagpur
+            </a>
+
+            <!-- NEW CITY -->
+            <a onclick="showCity('jalgaon')">
+                Jalgaon
+            </a>
+
+        </div>
+
+
+        <!-- Right Column -->
+        <div class="information" id="cityInfo">
+
+            <h1>Welcome</h1>
+
+            <p>
+                Click on any city name from the left side
+                to display information about that city.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function showCity(city) {
+
+            let information =
+                document.getElementById("cityInfo");
+
+
+            /* Pune */
+
+            if (city === "pune") {
+
+                information.innerHTML = `
+
+                    <h1>Pune</h1>
+
+                    <p>
+                        Pune is a major city in Maharashtra, India.
+                        It is known as an important educational and
+                        IT hub.
+                    </p>
+
+                    <h3>Famous Places</h3>
+
+                    <ul>
+                        <li>Shaniwar Wada</li>
+                        <li>Aga Khan Palace</li>
+                        <li>Sinhagad Fort</li>
+                    </ul>
+
+                `;
+
+            }
+
+
+            /* Mumbai */
+
+            else if (city === "mumbai") {
+
+                information.innerHTML = `
+
+                    <h1>Mumbai</h1>
+
+                    <p>
+                        Mumbai is the capital city of Maharashtra.
+                        It is one of the largest financial and
+                        entertainment centres of India.
+                    </p>
+
+                    <h3>Famous Places</h3>
+
+                    <ul>
+                        <li>Gateway of India</li>
+                        <li>Marine Drive</li>
+                        <li>Elephanta Caves</li>
+                    </ul>
+
+                `;
+
+            }
+
+
+            /* Nashik */
+
+            else if (city === "nashik") {
+
+                information.innerHTML = `
+
+                    <h1>Nashik</h1>
+
+                    <p>
+                        Nashik is a famous city in Maharashtra.
+                        It is known for its temples, vineyards
+                        and religious importance.
+                    </p>
+
+                    <h3>Famous Places</h3>
+
+                    <ul>
+                        <li>Trimbakeshwar Temple</li>
+                        <li>Pandavleni Caves</li>
+                        <li>Sula Vineyards</li>
+                    </ul>
+
+                `;
+
+            }
+
+
+            /* Nagpur */
+
+            else if (city === "nagpur") {
+
+                information.innerHTML = `
+
+                    <h1>Nagpur</h1>
+
+                    <p>
+                        Nagpur is an important city in Maharashtra.
+                        It is popularly known as the Orange City.
+                    </p>
+
+                    <h3>Famous Places</h3>
+
+                    <ul>
+                        <li>Deekshabhoomi</li>
+                        <li>Futala Lake</li>
+                        <li>Zero Mile Stone</li>
+                    </ul>
+
+                `;
+
+            }
+
+
+            /* Jalgaon */
+
+            else if (city === "jalgaon") {
+
+                information.innerHTML = `
+
+                    <h1>Jalgaon</h1>
+
+                    <p>
+                        Jalgaon is an important city in Maharashtra.
+                        It is popularly known for its banana production
+                        and beautiful tourist places.
+                    </p>
+
+                    <h3>Famous Places</h3>
+
+                    <ul>
+                        <li>Manudevi Temple</li>
+                        <li>Satpuda Lekh</li>
+                    </ul>
+
+                `;
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
